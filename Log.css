@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+img {
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+nav {
+    background-color: #3b82f6;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo-image {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav .contact-us {
+    background-color: #10b981;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.log-iot {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.log-iot h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.log-iot p {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Styling container untuk semua log */
+.log-container {
+    display: flex;
+    justify-content: space-between; /* Atur spasi antar item */
+    flex-wrap: wrap; /* Izinkan baris baru */
+    gap: 20px; /* Jarak antar item */
+}
+
+/* Styling untuk setiap perangkat */
+.device {
+    flex: 1 1 calc(100% / 6 - 20px); /* Default 1 x 6 */
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.device h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk warna latar berbeda setiap perangkat */
+.ac { background-color: #ffecec; }
+.security-door { background-color: #fff4cc; }
+.temperature { background-color: #eaffec; }
+.fridge { background-color: #ecf5ff; }
+.tv { background-color: #ffefec; }
+.ups { background-color: #f0f0f0; }
+
+/* Styling untuk list log */
+.device ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ffffff; /* Warna latar belakang untuk list */
+    border-radius: 8px; /* Sudut membulat */
+    padding: 10px; /* Padding dalam list */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.device ul li {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    padding: 5px 10px; /* Padding untuk setiap item list */
+    border-radius: 5px; /* Sudut membulat untuk item list */
+    transition: background-color 0.3s; /* Efek transisi untuk hover */
+}
+
+/* Efek hover untuk item list */
+.device ul li:hover {
+    background-color: #e0f7fa; /* Warna latar saat hover */
+    cursor: pointer; /* Menunjukkan bahwa item dapat diklik */
+}
+
+
+/* Media query untuk 2 x 3 */
+@media (max-width: 1024px) {
+    .device {
+        flex: 1 1 calc(100% / 3 - 20px); /* 2 x 3 */
+    }
+}
+
+/* Media query untuk 3 x 2 */
+@media (max-width: 768px) {
+    .device {
+        flex: 1 1 calc(100% / 2 - 20px); /* 3 x 2 */
+    }
+}
+
+.footer-container {
+    background-color: #00A3FF;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-media a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+}

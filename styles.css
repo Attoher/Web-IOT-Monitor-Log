@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+img {
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: white;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 70%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+    width: 80%;
+}
+
+nav {
+    background-color: #3b82f6;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo-image {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav .contact-us {
+    background-color: #10b981;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.monitoring {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+    background-color: #f0f0f0;
+}
+
+.monitoring .card {
+    background-color: #acacac;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+.monitoring .card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.monitoring .card p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-container {
+    background-color: #00A3FF;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-media a img {
+    width: 30px;
+    margin-right: 10px;
+}
+.footer-contact {
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styling untuk LOG IOT */
+.log-iot {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.log-iot h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.log-iot p {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Styling container untuk semua log */
+.log-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Styling untuk setiap perangkat */
+.device {
+    width: 15%;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.device h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk warna latar berbeda setiap perangkat */
+.ac { background-color: #ffecec; }
+.security-door { background-color: #fff4cc; }
+.temperature { background-color: #eaffec; }
+.fridge { background-color: #ecf5ff; }
+.tv { background-color: #ffefec; }
+.ups { background-color: #f0f0f0; }
+
+/* Styling untuk list log */
+.device ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.device ul li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
