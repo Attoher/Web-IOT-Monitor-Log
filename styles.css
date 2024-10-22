@@ -212,7 +212,6 @@ nav .contact-us {
     height: 30px;
 }
 
-/* Styling untuk LOG IOT */
 .log-iot {
     text-align: center;
     margin-bottom: 20px;
@@ -229,7 +228,6 @@ nav .contact-us {
     color: gray;
 }
 
-/* Styling container untuk semua log */
 .log-container {
     display: flex;
     justify-content: space-around;
@@ -237,7 +235,7 @@ nav .contact-us {
     gap: 20px;
 }
 
-/* Styling untuk setiap perangkat */
+
 .device {
     width: 15%;
     background-color: #f7f7f7;
@@ -252,7 +250,7 @@ nav .contact-us {
     margin-bottom: 10px;
 }
 
-/* Styling untuk warna latar berbeda setiap perangkat */
+
 .ac { background-color: #ffecec; }
 .security-door { background-color: #fff4cc; }
 .temperature { background-color: #eaffec; }
@@ -260,7 +258,7 @@ nav .contact-us {
 .tv { background-color: #ffefec; }
 .ups { background-color: #f0f0f0; }
 
-/* Styling untuk list log */
+
 .device ul {
     list-style-type: none;
     padding: 0;
